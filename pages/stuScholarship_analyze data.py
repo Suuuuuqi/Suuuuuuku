@@ -36,7 +36,7 @@ col2.markdown("# 学生数据分析 👩‍🎓")
 st.sidebar.markdown("# 学生数据分析")
 
 #导入数据
-df=pd.read_csv(r".\data1.csv")
+df=pd.read_csv(r"./data1.csv")
 
 
 st.write('---')
@@ -49,7 +49,7 @@ choice = st.selectbox('📃  请下拉选择框', ["2024届硕士生数据集","
 #导入表格
 st.dataframe(df.iloc[0:9])
 #图标
-image=Image.open(r'.\pictures\5.png')
+image=Image.open(r'./pictures/5.png')
 st.image(image)
 st.write('---')
 
@@ -103,7 +103,7 @@ option1 = {
 st_echarts(options=option1)
 
 #图标
-image=Image.open(r'.\pictures\6.png')
+image=Image.open(r'./pictures/6.png')
 st.image(image)
 st.write('---')
 
