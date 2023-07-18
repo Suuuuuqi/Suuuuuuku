@@ -41,10 +41,10 @@ st.sidebar.markdown("# 大连理工大学奖学金评定模型")
 #st.markdown("<h1 style='text-align: center; color: grey;'>111</h1>", unsafe_allow_html=True)
 
 
-image=Image.open(r'.\pictures\1.png')
+image=Image.open(r'./pictures\1.png')
 st.image(image)
 
-df=pd.read_csv(r".\data1.csv")
+df=pd.read_csv(r"./data1.csv")
 st.write('---')
 st.write('✏️  第一步：请选择数据集')
 #选择数据
@@ -74,7 +74,7 @@ st.write('✏️  第三步：请设置参数')
 
 #输出训练后的混淆矩阵和评价指标
 def FinalResult(y_test, y_pred):
-   image=Image.open(r'.\pictures\2.png')
+   image=Image.open(r'./pictures/2.png')
    st.image(image)
    st.write('---')
 
