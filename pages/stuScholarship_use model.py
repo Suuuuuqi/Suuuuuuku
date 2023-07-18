@@ -35,9 +35,9 @@ col1,col2=st.columns([1,15])
 col2.markdown("# 大连理工大学奖学金评定 🗳️")
 st.sidebar.markdown("# 大连理工大学奖学金评定")
 
-df_new=pd.read_csv(r".\data2.csv")
+df_new=pd.read_csv(r"./data2.csv")
 #图标
-image=Image.open(r'.\pictures\3.png')
+image=Image.open(r'./pictures/3.png')
 st.image(image)
 
 
@@ -72,11 +72,11 @@ if col33.button("开始评定"):
    
     
     #图标
-    image=Image.open(r'.\pictures\4.png')
+    image=Image.open(r'./pictures/4.png')
     st.image(image)
     st.write('---')
     #导出结果
-    df_new_finished=pd.read_csv(r".\data3.csv")
+    df_new_finished=pd.read_csv(r"./data3.csv")
     #导入表格
     st.dataframe(df_new_finished.iloc[0:9])
     #提交结果
