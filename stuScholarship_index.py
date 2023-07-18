@@ -18,5 +18,5 @@ def main():
 if __name__ == '__main__':
     main()
     #图标
-    image=Image.open(r'.\pictures\7.png')
+    image=Image.open(r'./pictures/7.png')
     st.image(image)
